@@ -319,6 +319,7 @@ Has no context.
     "text": "Hello"
   }
 }
+```
 - Why it matters:
 
 - type → routing
@@ -366,6 +367,8 @@ Know when not to use WebSockets
 
 ## 21. Mermaid Diagram – Full WebSocket Flow
 
+
+```mermaid
 sequenceDiagram
     participant Client
     participant Server
@@ -390,4 +393,4 @@ sequenceDiagram
     Server->>Server: Detect timeout
     Server->>Redis: Unsubscribe
     Server->>Server: Cleanup socket
-
+```
